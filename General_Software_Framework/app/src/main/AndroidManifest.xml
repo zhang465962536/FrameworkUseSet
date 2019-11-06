@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.general_software_framework">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".VideoView.JieCaoVideoPlayerActivity"></activity>
+        <activity
+            android:name=".VideoView.UniversalVideoViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".PullToRefresh.PullToRefreshWebViewActivity" />
+        <activity android:name=".PullToRefresh.PullToRefreshGridActivity" />
+        <activity android:name=".PullToRefresh.PullToRefreshListActivity" />
+        <activity android:name=".PullToRefresh.PullToRefreshMainActivity" />
+        <activity
+            android:name=".RecyclerView.RecyclerViewActivity"
+            android:theme="@style/listDividerTheme" />
+        <activity android:name=".Picasso.Activity.PicassoTransfromationsActivity" />
+        <activity android:name=".Picasso.Activity.PicassoListviewActivity" />
+        <activity android:name=".Picasso.Activity.PicassoActivity" />
+        <activity android:name=".ImageLoader.Activity.ImageloaderViewpagerActivity" />
+        <activity android:name=".ImageLoader.Activity.ImageloaderGridviewActivity" />
+        <activity android:name=".ImageLoader.Activity.ImageloaderListviewActivity" />
+        <activity android:name=".ImageLoader.ImageLoaderActivity" />
+        <activity android:name=".butterknife.ButterKnifeActivity" />
+        <activity android:name=".EventBus.EventBusSendActivity" />
+        <activity android:name=".EventBus.EvenBusActivity" />
+        <activity android:name=".xutils3.net.XutilsNetActivity" />
+        <activity android:name=".xutils3.annotation.FragmentXutils3Activity" />
+        <activity android:name=".xutils3.Xutils3Activity" />
+        <activity android:name=".Json.activity.FastJsonActivity" />
+        <activity android:name=".Json.activity.GsonActivity" />
+        <activity android:name=".Json.activity.NativeJsonParseActivity" />
+        <!--
+    <activity android:name=".Activity.OKHttpListActivity" />
+        <activity android:name=".Activity.OKHttpActivity" />
+        -->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
